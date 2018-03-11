@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+</div>
+
+<div class="slider-container">
+    <div class="slider-container" endlessSlider itemWidth=400 itemSpace=60 [items]="sliderContent" (updateItem)="slideritems = $event">
+        <div class="slider-item" *ngFor="let item of slideritems; let i = index;" [endlessSliderItem]="item" [itemPos]="item.leftPos">
+            <div class="content" [style.background]="item.attributes.color">
+                <span>{{item.attributes.text}}</span>
+            </div>
+        </div>
+    </div>
+</div>

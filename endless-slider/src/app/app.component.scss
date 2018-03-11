@@ -1,0 +1,28 @@
+.slider-container{
+    background: lightblue;
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+    .slider-item{
+        // text not selectable, because of slider things :)
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+            color: white;
+            text-align: center;
+            font-size: 3em;
+        }
+    }
+}
